@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letter to Santa</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+	    background-image: url('background.jpg');
+            background-color: #f0eada;
+            margin: 20px;
+        }
+
+        #letter-container {
+            max-width: 1000px;
+            height: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: 5px double #7f7f7f;
+        }
+
+        #present-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .present-item {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .present-button {
+            background-color: #ff0000;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: bold;
+	    height: 100px;
+	    width: 200px;
+	    background-image: url('button.jpg');
+        }
+
+        .present-link {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+	.lower-gif {
+            position: absolute; /* Position the GIF absolutely within the container */
+            bottom: 100px; /* Align the GIF to the bottom */
+            left: 50%; /* Center the GIF horizontally */
+            transform: translateX(-50%); /* Adjust to center the GIF horizontally */
+            width: 100px; /* Set the width of the GIF */
+            height: auto; /* Maintain the aspect ratio of the GIF */
+        }
+    </style>
+</head>
+<body>
+    <div id="letter-container">
+        <h1 style="color: #cc0000; text-align: center; font-size: 24px;">Dear Santa,</h1>
+        <p style="text-align: center; font-size: 16px;">This year, I've been really good, and here's my Christmas wishlist:</p>
+
+        <ul id="present-list">
+            <li class="present-item">
+                <span>Item 1</span>
+                <button class="present-button"><a class="present-link" href="https://www.amazon.com/item1" target="_blank">Link to the present</a></button>
+            </li>
+            <li class="present-item">
+                <span>Item 2</span>
+                <button class="present-button"><a class="present-link" href="https://www.amazon.com/item2" target="_blank">Link to the present</a></button>
+            </li>
+            <!-- Add more items as needed -->
+        </ul>
+
+        <p style="text-align: center; font-size: 16px;">Thank you, Santa! Wishing you a magical holiday season.</p>
+	<img class="lower-gif" src="mygif.gif" alt="Lower GIF">
+    </div>
+</body>
+</html>
